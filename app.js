@@ -40,3 +40,17 @@
 // var greet5 = require('./module_patterns/greet5').greet;
 // greet5();
 
+var Emitter = require('./emitter');
+
+var emtr = new Emitter();
+
+emtr.on('episodeWatched', function() {
+    console.log('Somebody watched an episode');
+});
+
+emtr.on('episodeWatched', function() {
+    console.log('A Seinfeild episode is watched');
+});
+
+console.log('Bubble Boy Watched after watching The Trip!');
+emtr.emit('episodeWatched');

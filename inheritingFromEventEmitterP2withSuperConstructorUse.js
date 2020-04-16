@@ -6,11 +6,11 @@ function Book() {
 }
 
 Book.prototype.read = function() {
-    Book.call(this);
     console.log(`Reading ${ this.bookName} by ${this.author} of ${this.algorithmIncluded} algorithms`);
 }
 
 function Algorithm( totAlgo) {
+    Book.call(this);
     this.algorithmIncluded = totAlgo;
 }
 

@@ -1,0 +1,17 @@
+{
+  "name": "package-manager-test-app",
+  "version": "1.0.0",
+  "description": "package-manager-test-app",
+  "main": "app2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ranit D A",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.25.3"
+  },
+  "devDependencies": {
+    "jasmine-node": "^3.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <h2>Book Registration Form</h2>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <form action="/register" method="POST">
+        Book Name: <input type="text" id="bookTitle" name="bookTitle">
+        <br><br>
+        Book Author : <input type="text" id="bookAuthor" name="bookAuthor">
+        <br><br>
+        <input type="Submit" value="submit">
+    </form>
+    <!-- <script>
+        $.ajax({
+            type: "POST",
+            url: '/userjson',
+            data: JSON.stringify({ userName: 'Janak', country: 'BD' }),
+            dataType: 'json',
+            contentType: 'application/json'
+        });
+    </script> -->
+</body>
+
+</html>

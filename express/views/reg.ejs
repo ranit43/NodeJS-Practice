@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <h3>User Registration Form</h3>
+    <link rel="stylesheet" href="/assets/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="/registration" method="POST">
+        User Name: <input type="text" id="username" name="username">
+        <br><br>
+        Age : <input type="number" id="age" name="age">
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        $.ajax({
+            type: "POST",
+            url: '/userjson',
+            data: JSON.stringify({ userName: 'Janak', country: 'BD' }),
+            dataType: 'json',
+            contentType: 'application/json'
+        });
+    </script>
+</body>
+
+</html>

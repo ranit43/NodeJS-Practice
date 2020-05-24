@@ -60,7 +60,7 @@ app.use('/', function (req, res, next) {
     next();
 });
 
-htmlController(app);
+htmlController(app, Book);
 
 app.listen(port);
 

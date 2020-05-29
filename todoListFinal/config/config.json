@@ -1,5 +1,5 @@
 {
-    "username": "testDbUser",
-    "pwd": "testDbUserPass",
-    "dbName": "testtodo"
+  "username": "testDbUser",
+  "pwd": "testDbUserPass",
+  "dbName": "testtodo"
 }
